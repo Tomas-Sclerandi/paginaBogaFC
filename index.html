@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Boga FC - Inicio</title>
+    <link rel="shortcut icon" href="imagenes/logobogagodines.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="bg-dark text-white">
+    <!-- header con nav-bar -->
+    <header>
+        <div class="container-fluid d-flex align-items-center justify-content-between px-0">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom">
+                <a href="index.html"><img src="imagenes/logobogagodines.png" alt="Logo La Boga FC" class="logo" /></a>
+                <div class="container-fluid ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="fixture.html">Fixture</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                            <li class="nav-item"><a class="nav-link" href="asociate.html">Asociate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="full-width-line">
+        <hr class="divisor divisor-top">
+    </div>
+    <!-- banner con carrusel con imagenes -->
+    <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagenes/bogaquerida.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/equipoa.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imagenes/partido51.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </section>
+    <!-- secciones principales -->
+
+    <div class="full-width-line">
+        <hr class="divisor divisor-top">
+    </div>
+    <main class="flex-grow-1 custom-main">
+        <section class="mb-5 titulo-logo">
+            <h1 class="display-4 titulo-boga">Bienvenidos a La Boga FC</h1>
+            <img src="imagenes/logobogagodines.png" alt="Logo La Boga FC" class="logo1" />
+            <p class="subtitulo-boga">    Nacimos de la joda entre amigos, sin más expectativas que pasarla bien los sábados.
+                Hoy, La Boga es garra, corazón y fútbol del bueno: subcampeones en el debut y ahora punteros, soñando despiertos.
+            </p>
+        </section>
+
+        <hr class="divisor">
+        <section class="noticias">
+            <h2 class="titulo-noticias">¡Últimas noticias!</h2>
+
+            <div class="tarjetas-contenedor">
+                <!-- Tarjeta 1 -->
+                <div class="tarjeta">
+                    <img src="imagenes/partido.jpg" alt="Victoria agónica" class="imagen-tarjeta">
+                    <div class="contenido-tarjeta">
+                        <h3>Victoria agónica</h3>
+                        <p>La Boga ganó sobre la hora y sigue soñando con el campeonato.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 - Carrusel -->
+                <div class="tarjeta">
+                    <div class="carrusel1">
+                        <img src="imagenes/remeranueva.jpg" class="carrusel-img active" alt="Remera">
+                        <img src="imagenes/pantalonnuevo.jpg" class="carrusel-img" alt="Pantalón">
+                        <button class="flecha izq">&#10094;</button>
+                        <button class="flecha der">&#10095;</button>
+                    </div>
+                    <div class="contenido-tarjeta">
+                        <h3>Nueva indumentaria</h3>
+                        <p>Presentamos la nueva camiseta y pantalón para la temporada 2025.</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="tarjeta">
+                    <img src="imagenes/bogaentradaencalor.jpg" alt="Entrenamiento" class="imagen-tarjeta">
+                    <div class="contenido-tarjeta">
+                        <h3>Entrenamiento intensivo</h3>
+                        <p>La pretemporada arrancó con todo: doble turno y físico a full.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="full-width-line">
+            <hr class="divisor divisor-top">
+        </div>
+        <!-- seccion asociate -->
+        <section class="text-center asociate-section">
+            <h2 class="asociate-tittle">¡Asociate a La Boga FC!</h2>
+            <p class="asociate-sub">Formá parte del club más pasional del barrio. Beneficios, sorteos y mucho más.</p>
+            <a href="asociate.html" class="btn">Asociarme</a>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-boga bg-black text-center text-white py-4 mt-auto">
+        <p class="mb-2 fw-light small">&copy; 2025 La Boga FC - Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://instagram.com/laboga.fc" target="_blank" aria-label="Instagram La Boga FC">
+                <i class="fab fa-instagram me-2"></i> Instagram
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

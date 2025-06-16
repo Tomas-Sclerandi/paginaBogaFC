@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.header {
+    position: relative;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-main {
+    margin: 0;
+    padding: 0;
+}
+
+.full-width-line {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.divisor {
+    border: none;
+    margin: 0;
+    height: 4px;
+    background: linear-gradient(to right, #f6ff00, #f2e200d0, #f6ff00);
+    width: 100%;
+}
+
+hr.divisor {
+    margin-top: 0;
+    /* que se suba bien arriba */
+}
+
+.footer-boga {
+    border-top: 2px solid #ffcc00;
+    letter-spacing: 0.5px;
+}
+
+.footer-boga .social-icons i {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-boga .social-icons a:hover i {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
+
+.footer-boga .social-icons a {
+    font-weight: 500;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    z-index: 10;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+    height: 250px;
+}
+
+.navbar-custom {
+    background-color: rgb(3, 17, 69);
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    height: 100px;
+}
+
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+    position: relative;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #ffcc00 !important;
+    /* Dorado al pasar el mouse */
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.carousel-item img {
+    height: 670px;
+    object-fit: cover;
+    object-position: center;
+    align-items: center;
+}
+
+/* SECCION FIXTURE */
+.fixture-section {
+    padding: 40px;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+.titulo-fixture {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.filtros button,
+.grupos-tabs button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #004080;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filtros button:hover,
+.grupos-tabs button:hover {
+    background-color: #002f5f;
+}
+
+.grupos-tabs .tab.active {
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: bold;
+}
+
+#fixture-tabla-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.fixture-tabla {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.fixture-tabla th,
+.fixture-tabla td {
+    border: 1px solid #555;
+    padding: 10px;
+}
+
+.fixture-tabla th {
+    background-color: #222;
+    color: #ffcc00;
+}
+
+/* seccion titulo h1**/
+.titulo-boga {
+    color: #FFD700;
+    text-shadow: 3px 3px 8px #0033A0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-top: 55px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.titulo-logo h1,
+.titulo-logo p {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.titulo-logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+}
+
+.logo1 {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+
+}
+
+.subtitulo-boga {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 82%;
+    letter-spacing: 1.2px;
+    font-style: italic;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: baseline;
+}
+
+/* seccion noticias */
+.noticias {
+    background-color: #020f38;
+    /* Combinando con nav */
+    padding: 3rem 1rem;
+    color: white;
+    text-align: center;
+}
+
+.titulo-noticias {
+    font-size: 2.5rem;
+    color: #56c1ff;
+    /* Amarillo para resaltar */
+    margin-bottom: 2rem;
+    font-family: 'Russo One', sans-serif;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Tarjetas */
+.tarjetas-contenedor {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.tarjeta {
+    background-color: #ffffff10;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 400px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(6px);
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(255, 193, 7, 0.4);
+}
+
+
+.tarjeta img,
+.carrusel-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+/* Carrusel */
+.carrusel1 {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.carrusel-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+}
+
+/* Contenido */
+.contenido-tarjeta {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #061c72;
+}
+
+.contenido-tarjeta h3 {
+    font-size: 1.6rem;
+    color: #ffc107;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.carrusel-img.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Flechas */
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 0.8rem;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.flecha:hover {
+    background-color: rgba(255, 193, 7, 1);
+}
+
+.flecha.izq {
+    left: 10px;
+}
+
+.flecha.der {
+    right: 10px;
+}
+
+.social-icons a {
+    color: #5fd4f4;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.social-icons a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+/* */
+/* Estilo general de la sección */
+.asociate-section {
+    background: linear-gradient(135deg, #041454, #0066cc);
+    color: white;
+    padding: 70px 40px;
+    border-radius: 25px;
+    margin: 50px auto;
+    max-width: 1100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.asociate-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+}
+
+.asociate-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.asociate-sub {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.asociate-section .btn {
+    background-color: white;
+    color: #041454;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.asociate-section .btn:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+
+/* Animación de fade-in */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.asociate-section h2,
+.asociate-section p,
+.asociate-section .btn {
+    animation: fadeInUp 0.8s ease both;
+}
+
+.asociate-section p {
+    animation-delay: 0.2s;
+}
+
+.asociate-section .btn {
+    animation-delay: 0.4s;
+}
+
+/* SECCION FORMULARIO CONTACTO*/
+.contacto-body {
+    background: linear-gradient(to bottom right, #02163b, #093875);
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+}
+
+/* Estilo al formulario */
+.formulario-contacto {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Título contacto */
+.titulo-contacto {
+    font-weight: 700;
+    color: #ffc107;
+    text-shadow: 2px 2px #000;
+    text-align: center;
+}
+
+/* Inputs personalizados */
+.campo-contacto {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+/* Botón de enviar */
+#formContacto1 button[type="submit"] {
+    background-color: #ffc107;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#formContacto1 button[type="submit"]:hover {
+    background-color: #e0a800;
+    color: #000;
+}
+
+/* CSS GALERIA */
+main.container-fluid {
+    background-color: #031145;
+    /* igual o complementario al navbar */
+    color: #fff;
+}
+
+/* Título llamativo */
+h1.text-center {
+    color: #ffdd00;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+/* Galería tipo masonry */
+.masonry-grid {
+    column-count: 1;
+    column-gap: 1.2rem;
+    padding: 0 0.8rem;
+}
+
+@media (min-width: 576px) {
+    .masonry-grid {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .masonry-grid {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 992px) {
+    .masonry-grid {
+        column-count: 4;
+    }
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.masonry-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.masonry-item img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    filter: brightness(0.95);
+    transition: filter 0.3s ease;
+}
+
+.masonry-item:hover img {
+    filter: brightness(1);
+}
+
+/* Texto debajo de imágenes con estilo */
+.masonry-caption {
+    font-size: 1rem;
+    color: #ffe86b;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo para la sección del fixture */
+/* Fondo oscuro para toda la sección */
+.fixture-container {
+    width: 100vw; /* Full viewport width */
+    margin: 0;
+    padding: 2rem 1rem;
+    background: #1e1e2f;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 0;
+}
+
+/* Centrado del contenido interno */
+.fixture-container h2,
+.fixture-container .text-center,
+#fixture-list {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Lista de partidos */
+#fixture-list .list-group-item {
+    background-color: #2a2a3d;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+    padding: 1.2rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease;
+    color: #ffffff;
+}
+
+#fixture-list .list-group-item:hover {
+    transform: scale(1.01);
+    background-color: #33334d;
+}
+
+/* Hora del partido */
+#fixture-list .fw-bold {
+    font-size: 1.2rem;
+    color: yellow;
+}
+
+/* Fecha del partido */
+#fixture-list small.text-muted {
+    font-size: 0.85rem;
+    color: #ff9800;
+    font-weight: 500;
+}
+
+/* Botones */
+.fixture-container .btn {
+    border-color: yellow;
+    color: yellow;
+    transition: all 0.3s ease;
+}
+
+.fixture-container .btn:hover,
+.fixture-container .btn:focus {
+    background-color: yellow;
+    color: #1e1e2f;
+}
