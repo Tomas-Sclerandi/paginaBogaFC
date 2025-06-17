@@ -88,6 +88,20 @@ hr.divisor {
     height: 100px;
 }
 
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: rgb(3, 17, 69);
+        /* mismo color que la navbar */
+        padding: 1rem;
+    }
+
+    .navbar-collapse .nav-link {
+        color: white !important;
+        font-size: 1.2rem;
+        text-align: right;
+    }
+}
+
 .navbar-hidden {
     transform: translateY(-100%);
     transition: transform 0.3s ease;
@@ -128,6 +142,7 @@ hr.divisor {
 .navbar-nav .nav-link:hover::after {
     width: 100%;
 }
+
 .carousel-item img {
     height: 673px;
     object-fit: cover;
@@ -228,6 +243,27 @@ hr.divisor {
     flex-wrap: wrap;
     margin-top: 1.5rem;
     padding-top: 1rem;
+}
+
+@media (max-width: 767.98px) {
+    .titulo-boga {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .subtitulo-boga {
+        text-align: justify;
+        padding: 0 1rem;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .logo1 {
+        width: 120px;
+        height: auto;
+        margin: 1rem 0;
+    }
 }
 
 .logo1 {
