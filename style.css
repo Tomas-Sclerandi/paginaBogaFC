@@ -128,12 +128,16 @@ hr.divisor {
 .navbar-nav .nav-link:hover::after {
     width: 100%;
 }
-
 .carousel-item img {
-    height: 670px;
+    height: 673px;
     object-fit: cover;
-    object-position: center;
-    align-items: center;
+}
+
+/* Ajuste en celulares */
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 200px;
+    }
 }
 
 /* SECCION FIXTURE */
